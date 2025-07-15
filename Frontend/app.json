@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "name": "alert-matrix",
+    "slug": "alert-matrix",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.alertmatrix.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#ffffff",
+          "sounds": ["./assets/notification.wav"],
+          "mode": "production",
+          "enableInDevelopment": true,
+          "androidMode": "default",
+          "iosDisplayInForeground": true
+        }
+      ],
+      [
+        "react-native-video",
+        {
+          "enableAds": false,
+          "enableExoPlayer": true,
+          "androidExtensions": {
+            "useExoplayerIMA": false,
+            "useExoplayerRtsp": true,
+            "useExoplayerSmoothStreaming": true,
+            "useExoplayerDash": true,
+            "useExoplayerHls": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "EXPO_ROUTER_APP_ROOT": "./app",
+      "API_URL": "http://192.168.0.109:8000",
+      "YOLO_SERVICE_URL": "http://192.168.0.109:5000",
+      "eas": {
+        "projectId": "27809e5d-be71-4fce-a354-892ae4219ae5"
+      }
+    }
+  }
+}

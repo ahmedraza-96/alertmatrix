@@ -1,0 +1,214 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backend (Node.js)
+backend/node_modules/
+backend/.env
+backend/logs/
+backend/uploads/
+backend/temp/
+
+# Frontend (React Native)
+Frontend/node_modules/
+Frontend/.expo/
+Frontend/dist/
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/.env
+Frontend/backend/node_modules/
+Frontend/backend/.env
+
+# Android
+Frontend/android/app/build/
+Frontend/android/build/
+Frontend/android/.gradle/
+Frontend/android/local.properties
+Frontend/android/app/release/
+Frontend/android/app/debug/
+Frontend/android/app/src/main/assets/index.android.bundle
+Frontend/android/app/src/main/assets/index.android.bundle.meta
+Frontend/android/app/src/main/res/drawable-*/node_modules_*
+
+# iOS
+Frontend/ios/build/
+Frontend/ios/Pods/
+Frontend/ios/Podfile.lock
+Frontend/ios/*.xcworkspace/xcuserdata/
+Frontend/ios/*.xcodeproj/xcuserdata/
+Frontend/ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Python (ML/YOLO components)
+Yolo5/__pycache__/
+Yolo5/*/__pycache__/
+Yolo5/*/*/__pycache__/
+Yolo5/*.pyc
+Yolo5/*/*.pyc
+Yolo5/*/*/*.pyc
+Yolo5/.pytest_cache/
+Yolo5/.coverage
+Yolo5/htmlcov/
+Yolo5/.tox/
+Yolo5/.venv/
+Yolo5/venv/
+Yolo5/env/
+Yolo5/ENV/
+Yolo5/*/runs/
+Yolo5/*/weights/*.pt
+Yolo5/*/weights/*.onnx
+Yolo5/*/Results/
+Yolo5/*/logs/
+Yolo5/*/checkpoints/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs (but allow Frontend logs)
+logs/
+*.log
+!Frontend/*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# APK files (generated builds) - but allow Frontend APKs
+*.apk
+*.aab
+!Frontend/*.apk
+!Frontend/*.aab
+
+# Model files (large ML models) - only in YOLO directories
+Yolo5/*.pt
+Yolo5/*.onnx
+Yolo5/*.pkl
+Yolo5/*.h5
+Yolo5/*.pb
+
+# Dataset files (large training data) - only in YOLO directories
+Yolo5/*.jpg
+Yolo5/*.jpeg
+Yolo5/*.png
+Yolo5/*.mp4
+Yolo5/*.avi
+Yolo5/*.mov
+Yolo5/*.txt
+
+# Exclude specific large directories
+Yolo5/Guns-Knive Detection.v1i.yolov5pytorch/
+Yolo5/Weapons-and-Knives-Detector-with-YOLOv8/
+Yolo5/weapon_training_fresh/
+
+# Keep specific model files if needed
+!Yolo5/best.pt
+!Yolo5/*/weights/best.pt
+
+# IMPORTANT: Allow Frontend assets and important files
+!Frontend/assets/**/*.jpg
+!Frontend/assets/**/*.jpeg
+!Frontend/assets/**/*.png
+!Frontend/assets/**/*.gif
+!Frontend/assets/**/*.svg
+!Frontend/assets/**/*.ico
+!Frontend/assets/**/*.ttf
+!Frontend/assets/**/*.woff
+!Frontend/assets/**/*.woff2
+
+# Allow important Frontend documentation and config files
+!Frontend/*.md
+!Frontend/*.json
+!Frontend/*.js
+!Frontend/*.jsx
+!Frontend/*.ts
+!Frontend/*.tsx
+!Frontend/*.config.js
+!Frontend/*.config.ts
+
+# Allow Frontend directories and subdirectories
+!Frontend/
+!Frontend/**/ 
